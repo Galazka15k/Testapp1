@@ -17,6 +17,7 @@ namespace Testapp1
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .UseApplicationInsights()
+                .UseUrls("http://207.154.202.253:5000")
                 .Build();
 
             host.Run();
